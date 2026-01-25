@@ -1,13 +1,4 @@
-% Introduction to MATLAB
 
-% This is how you write a comment! This code will not be run, it is simply
-% to make your code readable and easy to understand.
-
-%%
-% Basic arithmetic operations and variables
-
-% In the following lines of code, we assign numerical values to the
-% variables 'a' and 'b' and then do some arithmetic operations on them.
 
 a = 10;
 b = 4;
@@ -16,17 +7,6 @@ diffResult = a - b;
 prodResult = a * b;
 divResult = a / b;
 
-% Why add a semicolon?
-% The semicolon suppresses output of a single command. Remove one of the
-% semicolons in this section and run the section to see how the output in
-% the command window changes!
-
-% What is a section break?
-% The '%%' symbol creates a section break => it allows you to split your
-% code into different sections, and run them individually. It is just a way to
-% organise your code!
-
-% How can we check the values of these variables? => Display them using the 'disp' function!
 disp(sumResult);
 disp(diffResult);
 disp(prodResult);
@@ -35,23 +15,10 @@ disp(divResult);
 
 % Displaying output
 
-% We can also display output using the 'fprintf' function
+
 
 fprintf('Results of arithmetic operations: \n');
 fprintf('Sum: %d\nDifference: %d\nProduct: %d\nDivision: %.2f\n', sumResult, diffResult, prodResult, divResult);
-
-% '\n' gives rise to a newline
-% '%d' is a placeholder for signed integers
-% '%f' is a placeholder for floating-point numbers/decimal numbers, and
-% '.b' indicates to print 'b' digits after the decimal point
-
-% What is the default number of digits printed after the decimal point?
-% What happens if you dont give any value for 'b'?
-% Can you find the placeholders for strings and characters? Try to print a
-% line using them!
-%%
-
-% Vectors
 
 vectorA = [1, 2, 3, 4, 5];
 vectorB = [5, 4, 3, 2, 1];
@@ -104,7 +71,6 @@ disp('Elementwise exponent of matrices: ');
 disp(elementwiseExponent);
 %%
 
-% Can you find out what vectors/matrices the following MATLAB functions return?
 
 array1 = linspace(0,10,11);
 array2 = linspace(1,10,4);
@@ -217,4 +183,5 @@ for i = 1:l
     x = x + v(i)^2;
 end
 y = sqrt(x);
+
 end
