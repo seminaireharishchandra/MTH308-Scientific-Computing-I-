@@ -1,6 +1,4 @@
-% Lab 1 Solutions
 
-%% Testing code - you can copy and paste this section into your MATLAB file, and run it to check if your functions give the desired outputs. You can match them with the results shared (i.e. the output of this script)
 elements = system_elements(2,3,-1,2);
 fprintf("The elements of the system F(2,3,-1,2) is:\n");
 disp(elements);
@@ -86,4 +84,5 @@ end
 function [] = plot_system(beta, t, L, U)
 y = system_elements(beta, t, L, U);
 plot(y,0, 'b.');
+
 end
