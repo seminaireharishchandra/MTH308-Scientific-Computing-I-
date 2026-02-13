@@ -27,7 +27,7 @@ fprintf("\nVisualizing the elements of both systems on the number line, we get:\
 plot_system(2,3,-1,2);
 plot_system(10,1,1,1);
 
-%% Problem 1
+% P1
 
 % Function to generate all representable floating-point numbers in a system
 
@@ -86,3 +86,4 @@ y = system_elements(beta, t, L, U);
 plot(y,0, 'b.');
 
 end
+
