@@ -78,7 +78,7 @@ function y = no_of_elements(beta, t, L, U)
 y = 2*(beta-1)*(beta^(t-1))*(U-L+1)+1;
 end
 
-%% Problem 2
+%% P2
 
 % Function to plot all the points in a given floating point system
 function [] = plot_system(beta, t, L, U)
@@ -86,4 +86,5 @@ y = system_elements(beta, t, L, U);
 plot(y,0, 'b.');
 
 end
+
 
